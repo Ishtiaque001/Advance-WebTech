@@ -11,7 +11,7 @@ getAllCourses(): string {
 }
 
 @Get(":id")
-getCourseById(id: string): string {
+getCourseById(@Param("id") id: string): string {
     return this.courseService.getCourseById(id);
 }
 
