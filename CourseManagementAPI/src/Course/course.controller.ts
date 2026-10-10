@@ -10,7 +10,7 @@ getAllCourses(): string {
     return "Got all courses - from service ";
 }
 
-@Get(':id')
+@Get(":id")
 getCourseById(id: string): string {
     return this.courseService.getCourseById(id);
 }
@@ -20,12 +20,12 @@ createCourse(string: string): string {
     return this.courseService.createCourse(string);
 }
 
-@Put(':id')
+@Put(":id")
 updateCourse(id: string): string {
     return this.courseService.updateCourse(id);
 }
 
-@Patch(':id')
+@Patch(":id")
 patchCourse(id: string): string {
     return this.courseService.patchCourse(id);
 }
