@@ -11,20 +11,21 @@ getAllCourses(){
 }
 
 getCourseById(id: string){
-    return`Get Course with id: ${id} - from service`;
+    return "Get Course with id " +id +" - from service";
+    
 }
 
 createCourse(string: string){
     return "Create Course - from service";
 }
 updateCourse( id: string){
-    return `Update Course ${id} - from service`;
+    return "Update Course " + id + " - from service";
 }
 patchCourse(id: string){
-    return `Patch Course ${id} - from service`;
+    return "Patch Course " + id + " - from service";
 }
  deleteCourse(id: string){
-    return `Delete Course ${id} - from service`;
+    return "Delete Course " + id + " - from service";
  }
 
       
