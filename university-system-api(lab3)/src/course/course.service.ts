@@ -8,9 +8,16 @@ export class CourseService {
             data:[]
      }
 }
+
+getCourseById(id:string){
+       return `All courses fetched ${id}`;
 }
 
+createCourse(name: string, code: string) {
+    return{
+        message : "Course Created",
+        data : {name,code}
+}
 
-
-
-
+}
+}
