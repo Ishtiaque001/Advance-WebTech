@@ -1,11 +1,15 @@
-import { Injectable } from '@nestjs/common';
+import { forwardRef, Inject, Injectable } from '@nestjs/common';
 import { CourseService } from '../course/course.service.js';
+import { NotificationService } from '../notification/notification.service.js';
 
 @Injectable()
 
 export class EnrollmentService {
-      constructor(private readonly courseService: CourseService) {}
-
+      constructor(
+        
+        @Inject(forwardRef(()=> NotificationService ))
+        private readonly courseService: CourseService,) {}
+  
 
       enrollStudent(studentName: string, courseId: string) {
 
