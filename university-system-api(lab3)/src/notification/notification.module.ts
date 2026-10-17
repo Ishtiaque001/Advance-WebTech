@@ -7,6 +7,7 @@ import { EnrollmentModule } from '../enrollment/enrollment.module.js';
    imports: [forwardRef(() =>EnrollmentModule)],
   controllers: [NotificationController],
   providers: [NotificationService],
+  exports: [NotificationService]
  
 })
 export class NotificationModule {}

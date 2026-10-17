@@ -6,9 +6,11 @@ import { NotificationModule } from '../notification/notification.module.js';
 
 
 @Module({
-  imports: [forwardRef(() => NotificationModule)],
+  imports: [
+    CourseModule,forwardRef(() => NotificationModule)],
   controllers: [EnrollmentController],
   providers: [EnrollmentService],
-  //imports: [CourseModule]
+  exports: [EnrollmentService]
+  //imports: [CourseModule] 
 })
 export class EnrollmentModule {}
