@@ -25,12 +25,13 @@ description: string;
 
 @IsPositive()
 @IsNumber()
+@Type(() => Number)
  price : number;
 
 @IsInt()
 @Min(0)
 @IsOptional()
-
+@Type(() => Number)
 stock : number;
 
 @IsString()
