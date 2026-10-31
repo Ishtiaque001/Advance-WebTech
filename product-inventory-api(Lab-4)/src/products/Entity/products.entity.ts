@@ -13,7 +13,7 @@ import { Entity, PrimaryGeneratedColumn, Column,
     @Column({
       nullable:true
     })
-    desciption: string;
+    description: string;
 
     @Column({
       type :"decimal",
@@ -28,7 +28,7 @@ import { Entity, PrimaryGeneratedColumn, Column,
     stock: number;
 
   @Column()
-  categoty:string;
+  category:string;
 
   @Column({
    default:true
